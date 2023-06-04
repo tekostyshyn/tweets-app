@@ -2,7 +2,7 @@
 > This is a Tweets application created using React.
 > Live demo [_here_](https://tekostyshyn.github.io/tweets-app/).
 
-![Screenshot of the App](./assets/tweets-app)
+![Screenshot of the App](./assets/tweets-app.png)
 
 ## Table of Contents
 * [General Info](#general-information)
