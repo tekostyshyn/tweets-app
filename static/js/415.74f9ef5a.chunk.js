@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[415],{415:function(e,t,n){n.r(t),n.d(t,{default:function(){return s}});var r=n(184);function s(){return(0,r.jsx)("div",{children:(0,r.jsx)("h1",{children:"This is an awesome Tweets App!"})})}}}]);
+//# sourceMappingURL=415.74f9ef5a.chunk.js.map
