@@ -24,7 +24,7 @@ acquainted and configure additional features
 2. User can follow or unfollow these tweets.
 3. If user decides to follow tweet, the number of followers will increase by one after pressing "Follow" button.
 4. User can filter all tweets by choosing one of the three options: Show all, Follow, Following.
-5. user can rreturn to Home page by pressing Go back button.
+5. User can return to Home page by pressing Go back button.
 
 ## Preparing for coding
 
