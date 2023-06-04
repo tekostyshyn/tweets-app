@@ -23,8 +23,8 @@ const TweetCard = ({ id, tweets, followers, imageUrl, onClick }) => {
           <Avatar src={imageUrl} />
         </AvatarWrapper>
         <TextContainer>
-          <Text>{tweets} tweets</Text>
-          <Text>{followers} followers</Text>
+          <Text>{tweets.toLocaleString('en-IN')} tweets</Text>
+          <Text>{followers.toLocaleString('en-IN')} followers</Text>
         </TextContainer>
         <Button
           className={isFollowing ? 'isFollowing' : ''}

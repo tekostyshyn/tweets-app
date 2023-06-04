@@ -8,7 +8,6 @@ export const Button = styled.button`
   color: #5cd3a8;
   text-transform: uppercase;
   border: none;
-  border-bottom: 2px solid #5cd3a8;
   background-color: transparent;
   width: 230px;
   height: 40px;

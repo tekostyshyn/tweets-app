@@ -5,6 +5,7 @@ import Dropdown from 'components/Dropdown';
 import TweetCardsList from 'components/TweetCardsList';
 import LoadMoreButton from 'components/LoadMoreButton';
 import Loader from 'components/Loader';
+import BackButton from 'components/BackButton';
 
 export default function Tweets() {
   const [users, setUsers] = useState([]);
@@ -81,6 +82,7 @@ export default function Tweets() {
 
   return (
     <>
+      <BackButton />
       <Dropdown onChange={handleSelectChange} />
       {filteredUsers.length > 0 && (
         <TweetCardsList users={filteredUsers} onClick={handleOnFollowClick} />
