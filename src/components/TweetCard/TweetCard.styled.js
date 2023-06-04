@@ -16,7 +16,6 @@ export const Item = styled.li`
 export const Container = styled.div`
   position: relative;
   width: 100%;
-  height: 100%;
   padding-top: 284px;
   display: flex;
   flex-direction: column;
@@ -97,17 +96,17 @@ export const Button = styled.button`
   font-size: 18px;
   line-height: 1.22;
   color: #373737;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: #5cd3a8;
+    transform: scale(1.05);
   }
 
   &.isFollowing {
     background-color: #5cd3a8;
 
     &:hover {
-      background-color: #ebd8ff;
+      transform: scale(1.05);
     }
   }
 `;
