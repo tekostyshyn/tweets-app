@@ -1,4 +1,4 @@
-# Delivery Food App 
+# Tweets App 
 > This is a Tweets application created using React.
 > Live demo [_here_](https://tekostyshyn.github.io/tweets-app/).
 
