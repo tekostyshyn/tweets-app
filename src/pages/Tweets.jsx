@@ -84,15 +84,17 @@ export default function Tweets() {
     <>
       <BackButton />
       <Dropdown onChange={handleSelectChange} />
-      {filteredUsers.length > 0 ? (
+      {filteredUsers.length > 0 && (
         <TweetCardsList users={filteredUsers} onClick={handleOnFollowClick} />
-      ) : (<p>There are no tweets to show</p>)}
+      )}
+      {filteredUsers.length <= 0 && !isLoading && (
+        <p>There are no tweets to show</p>
+      )}
       {isLoading && <Loader />}
       {error && <h2>{error}</h2>}
       {isLoadMoreVisible && filteredUsers.length > 0 && (
         <LoadMoreButton onClick={handleOnLoadMoreClick} disabled={isLoading} />
       )}
-
     </>
   );
 }
