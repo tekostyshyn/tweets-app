@@ -1,12 +1,19 @@
 import TweetCard from 'components/TweetCard/TweetCard';
 import { List } from './TweetCardsList.styled';
 
-const TweetCardsList = () => {
+const TweetCardsList = ({ users, onClick }) => {
   return (
     <List>
-      <TweetCard />
-      <TweetCard />
-      <TweetCard />
+      {users.map(({ id, tweets, followers, avatar }) => (
+        <TweetCard
+          key={id}
+          id={id}
+          tweets={tweets}
+          followers={followers}
+          imageUrl={avatar}
+          onClick={onClick}
+        />
+      ))}
     </List>
   );
 };

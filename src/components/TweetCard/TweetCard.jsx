@@ -1,3 +1,4 @@
+import { getFromStorage } from 'services/storageApi';
 import {
   Item,
   Container,
@@ -8,7 +9,13 @@ import {
   Button,
 } from './TweetCard.styled';
 
-const TweetCard = ({ tweets, followers, imageUrl, isFollowing }) => {
+const TweetCard = ({ id, tweets, followers, imageUrl, onClick }) => {
+  const isFollowing = getFromStorage(`tweet_${id}`);
+
+  const handleClick = () => {
+    onClick(id, isFollowing);
+  };
+
   return (
     <Item>
       <Container>
@@ -16,10 +23,13 @@ const TweetCard = ({ tweets, followers, imageUrl, isFollowing }) => {
           <Avatar src={imageUrl} />
         </AvatarWrapper>
         <TextContainer>
-          <Text>tweets</Text>
-          <Text>followers</Text>
+          <Text>{tweets} tweets</Text>
+          <Text>{followers} followers</Text>
         </TextContainer>
-        <Button className={isFollowing ? 'isFollowing' : ''}>
+        <Button
+          className={isFollowing ? 'isFollowing' : ''}
+          onClick={handleClick}
+        >
           {isFollowing ? 'Following' : 'Follow'}
         </Button>
       </Container>

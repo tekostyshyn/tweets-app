@@ -99,12 +99,15 @@ export const Button = styled.button`
   color: #373737;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &.isFollowing {
+  &:hover {
     background-color: #5cd3a8;
   }
 
-  &:hover,
-  &:focus {
+  &.isFollowing {
     background-color: #5cd3a8;
+
+    &:hover {
+      background-color: #ebd8ff;
+    }
   }
 `;
